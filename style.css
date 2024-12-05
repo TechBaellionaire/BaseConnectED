@@ -426,4 +426,66 @@ details p {
     margin-right: 10px;
 }
 
+#reward-points {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+#reward-points h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#reward-points #points-container {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#reward-points p {
+    font-size: 1.2em;
+}
+
+#blog-highlights {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 20px; /* Adjust this value to push the blog section to the right */
+
+.blog-post-preview {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-preview h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.blog-post-preview p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.blog-post-preview .btn:hover {
+    background-color: #0056b3;
+}
+
+.blog-post-preview {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Add margin-left to each blog post for more space to the left */
+    margin-right: 20px; /* Optional: add margin-right for symmetry */
+}
