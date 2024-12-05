@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BaseEd - Connecting Base with universities, students, and educators for workshops and partnerships.">
+    <title>BaseEd | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="workshop.html">Workshops</a></li>
+                    <li><a href="partnerships.html">Partnerships</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="hero">
+                <h1>Welcome to BaseEd</h1>
+                <p>Empowering Education in Africa through Blockchain Technology</p>
+                <a href="partnerships.html" class="btn">Join Our Network</a>
+            </section>
+
+            <section id="student-details">
+                <h2>Join BaseEd</h2>
+                <p>Enter your details to join our community and stay updated on workshops and events.</p>
+                <form id="student-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="university">University:</label>
+                    <select id="university" name="university" required>
+                    <option value="" disabled selected>Select your university</option>
+                    <option value="University of Lagos">University of Lagos</option>
+                    <option value="University of Ibadan">University of Ibadan</option>
+                    <option value="Obafemi Awolowo University">Obafemi Awolowo University</option>
+                    <option value="Ahmadu Bello University">Ahmadu Bello University</option>
+                    <option value="Covenant University">Covenant University</option>
+                    <option value="Federal University of Technology, Minna">Federal University of Technology, Minna</option>
+                    <option value="University of Nigeria, Nsukka">University of Nigeria, Nsukka</option>
+                    <option value="Nnamdi Azikiwe University, Awka">Nnamdi Azikiwe University, Awka</option>
+                    <option value="University of Jos">University of Jos</option>
+                    <option value="Chukwuemeka Odumegwu University">Chukwuemeka Odumegwu University</option>
+                    <option value="Other">Other</option>
+</select>
+
+<div id="other-university-container" style="display: none;">
+    <label for="other-university">Enter your university:</label>
+    <input type="text" id="other-university" name="other-university" placeholder="Enter your university name">
+</div>
+
+            
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+                    <label for="interests">Interests:</label>
+                    <textarea id="interests" name="interests" placeholder="Tell us about your interests"></textarea>
+                
+            
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="form-message"></div>
+            </section>            
+
+            <section class="features">
+                <div class="feature">
+                    <h2>Workshops</h2>
+                    <p>Hands-on training sessions for students and educators to explore blockchain technology and decentralized finance.</p>
+                    <a href="https://lu.ma/BaseMeetups?utm_source=dotorg&utm_medium=nav" class="btn">View Workshops</a>
+                </div>
+                <div class="feature">
+                    <h2>Partnerships</h2>
+                    <p>Collaborate with universities and educators to implement blockchain solutions in academic settings.</p>
+                    <a href="partnerships.html" class="btn">Become a Partner</a>
+                </div>
+                <div class="feature">
+                    <h2>Resources</h2>
+                    <p>Access guides, research papers, and tutorials to integrate blockchain into educational programs.</p>
+                    <a href="resources.html" class="btn">Explore Resources</a>
+                </div>
+                <div class="feature">
+                    <h2>Events Near Me</h2>
+                    <p>Attend events and hangouts near you to connect and network with fellow crypto enthusiasts..</p>
+                    <a href="https://lu.ma/discover" class="btn">Explore Resources</a>
+                </div>
+            </section>
+
+            <section class="cta">
+                <h2>Ready to Transform Education?</h2>
+                <p>Join BaseEd and be part of the future of education.</p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </section>
+        </main>
+    </div>
+
+    <section id="testimonials">
+        <h2>What Our Community Says</h2>
+        <div class="testimonial">
+            <p>"BaseEd helped me connect with blockchain experts and gain practical skills. Highly recommended!"</p>
+            <h4>- Jane Doe, University of Lagos</h4>
+        </div>
+        <div class="testimonial">
+            <p>"Collaborating with BaseEd has opened new research opportunities for our students."</p>
+            <h4>- Dr. John Smith, University of Ibadan</h4>
+        </div>
+    </section>
+    
+    <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>
+                <strong>Blockchain for Educators Workshop</strong><br>
+                January 20, 2024 - University of Lagos
+            </li>
+            <li>
+                <strong>Decentralized Finance (DeFi) Bootcamp</strong><br>
+                February 10, 2024 - University of Ibadan
+            </li>
+        </ul>
+        <a href="events.html" class="btn">View All Events</a>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What is BaseEd?</summary>
+            <p>BaseEd is a platform that connects universities, students, and educators with blockchain technology to enhance education through workshops, partnerships, and resources.</p>
+        </details>
+    
+        <details>
+            <summary>How can I join a workshop?</summary>
+            <p>You can join a workshop by visiting our <a href="workshops.html">Workshops</a> page, selecting an event, and registering online.</p>
+        </details>
+    
+        <details>
+            <summary>Who can become a partner with BaseEd?</summary>
+            <p>Universities, educational institutions, and organizations interested in integrating blockchain technology into their programs can partner with BaseEd.</p>
+        </details>
+    
+        <details>
+            <summary>Is BaseEd free to join?</summary>
+            <p>Yes, BaseEd is free for students and educators to join. Some workshops and events may have a nominal fee, which will be specified during registration.</p>
+        </details>
+    
+        <details>
+            <summary>How do I contact BaseEd for more information?</summary>
+            <p>You can reach out to us via the <a href="contact.html">Contact</a> page or email us directly at info@baseed.org.</p>
+        </details>
+    </section>
+    
+    <section id="newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest news and events.</p>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <div class="partner-logos">
+            <img src="partner1.png" alt="Partner 1">
+            <img src="partner2.png" alt="Partner 2">
+            <img src="partner3.png" alt="Partner 3">
+        </div>
+    </section>    
+
+    <section id="social-media">
+        <h2>Follow Us</h2>
+        <p>Stay connected with BaseEd on social media for the latest updates and events.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+        </div>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 BaseEd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

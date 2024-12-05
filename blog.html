@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - BaseEd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BaseEd</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="resources.html">Resources</a>
+            <a href="events.html">Events</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="blog">
+        <h1>Blog</h1>
+
+        <!-- Category Filter -->
+        <div id="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="blockchain">Blockchain</option>
+                <option value="education">Education</option>
+                <option value="community">Community</option>
+            </select>
+        </div>
+
+        <div id="blog-container"></div> <!-- Blog posts will be injected here -->
+    </section>
+
+    <script src="script.js"></script> <!-- JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,429 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 150px; 
+    background-color: #1e1e2f;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+/* Sidebar Navigation */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #3b3b4f;
+}
+
+/* Main Content */
+.content {
+    margin-left: 250px; /* Shift the content to the right to make space for the sidebar */
+    padding: 40px;
+    background-color: #f9f9f9;
+    width: calc(100% - 250px); /* Adjust width to fit alongside the sidebar */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Student Details Form Section */
+#student-details {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#student-details h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#student-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+#student-details label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#student-details input,
+#student-details textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#student-details textarea {
+    resize: vertical;
+}
+
+#student-details button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#student-details button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Message */
+#form-message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+#student-details select {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#other-university-container {
+    margin-top: 10px;
+}
+
+#other-university {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 20%;
+    min-width: 280px; /* Ensure features stack on smaller screens */
+    box-sizing: border-box;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+.feature .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.feature .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e2f;
+    color: white;
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+#upcoming-events {
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#upcoming-events ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#upcoming-events ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#newsletter {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#newsletter input {
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#newsletter button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+#partners {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.partner-logos img {
+    max-width: 150px;
+    margin: 20px;
+}
+
+#faq {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#faq h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+details {
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+details summary {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+details summary:hover {
+    color: #007bff;
+}
+
+details p {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+#social-media {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#social-media h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#social-media p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0056b3;
+}
+
+.social-icons a i {
+    margin-right: 10px;
+}
+
+
